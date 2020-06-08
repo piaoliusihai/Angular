@@ -1,1 +1,4 @@
 1. ng new PROJECT
+2. ng generate component recipes
+   ng g c recipes/recipe-list
+   
