@@ -1,0 +1,395 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/hdp/2.6.99.201-15110454/spark2/jars/slf4j-log4j12-1.7.16.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/hdp/2.6.99.201-15110454/hadoop/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+20/06/09 08:09:00 INFO SignalUtils: Registered signal handler for TERM
+20/06/09 08:09:00 INFO SignalUtils: Registered signal handler for HUP
+20/06/09 08:09:00 INFO SignalUtils: Registered signal handler for INT
+20/06/09 08:09:00 INFO SecurityManager: Changing view acls to: trusted-service-user
+20/06/09 08:09:00 INFO SecurityManager: Changing modify acls to: trusted-service-user
+20/06/09 08:09:00 INFO SecurityManager: Changing view acls groups to: 
+20/06/09 08:09:00 INFO SecurityManager: Changing modify acls groups to: 
+20/06/09 08:09:00 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(trusted-service-user); groups with view permissions: Set(); users  with modify permissions: Set(trusted-service-user); groups with modify permissions: Set()
+20/06/09 08:09:01 INFO ApplicationMaster: Preparing Local resources
+20/06/09 08:09:01 INFO MetricsConfig: loaded properties from hadoop-metrics2.properties
+20/06/09 08:09:01 INFO MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+20/06/09 08:09:01 INFO MetricsSystemImpl: azure-file-system metrics system started
+20/06/09 08:09:01 INFO ApplicationMaster: ApplicationAttemptId: appattempt_1591688699976_0005_000001
+20/06/09 08:09:01 INFO ApplicationMaster: Starting the user application in a separate Thread
+20/06/09 08:09:01 INFO ApplicationMaster: Waiting for spark context initialization...
+20/06/09 08:09:01 INFO RSCDriver: Connecting to: 2263c8e37b7a42be8e515d9bdae9dc570025cd09383:10000
+20/06/09 08:09:01 INFO RSCDriver: Starting RPC server...
+20/06/09 08:09:02 INFO RpcServer: Connected to the port 10000
+20/06/09 08:09:02 WARN RSCConf: Your hostname, 2263c8e37b7a42be8e515d9bdae9dc570001d640426, resolves to a loopback address, but we couldn&#39;t find any external IP address!
+20/06/09 08:09:02 WARN RSCConf: Set livy.rsc.rpc.server.address if you need to bind to another address.
+20/06/09 08:09:02 INFO RSCDriver: Received job request 42f80b85-90f0-4248-830e-f3311d1e3a06
+20/06/09 08:09:02 INFO RSCDriver: SparkContext not yet up, queueing job request.
+20/06/09 08:09:05 INFO SparkEntries: Starting Spark context...
+20/06/09 08:09:05 INFO SparkContext: Running Spark version 2.4.4.2.6.99.201-15110454
+20/06/09 08:09:05 INFO SparkContext: Submitted application: 2b21f572-b2cf-47d2-b25d-c8ee3e57b59a
+20/06/09 08:09:05 INFO SecurityManager: Changing view acls to: trusted-service-user
+20/06/09 08:09:05 INFO SecurityManager: Changing modify acls to: trusted-service-user
+20/06/09 08:09:05 INFO SecurityManager: Changing view acls groups to: 
+20/06/09 08:09:05 INFO SecurityManager: Changing modify acls groups to: 
+20/06/09 08:09:05 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(trusted-service-user); groups with view permissions: Set(); users  with modify permissions: Set(trusted-service-user); groups with modify permissions: Set()
+20/06/09 08:09:05 INFO Utils: Successfully started service &#39;sparkDriver&#39; on port 37377.
+20/06/09 08:09:05 INFO SparkEnv: Registering MapOutputTracker
+20/06/09 08:09:05 INFO SparkEnv: Registering BlockManagerMaster
+20/06/09 08:09:05 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+20/06/09 08:09:05 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+20/06/09 08:09:05 INFO DiskBlockManager: Created local directory at /mnt/var/hadoop/tmp/nm-local-dir/usercache/trusted-service-user/appcache/application_1591688699976_0005/blockmgr-b7087529-3509-4058-a9c6-742764afdf2a
+20/06/09 08:09:05 INFO MemoryStore: MemoryStore started with capacity 14.8 GB
+20/06/09 08:09:05 INFO SparkEnv: Registering OutputCommitCoordinator
+20/06/09 08:09:05 INFO log: Logging initialized @6250ms
+20/06/09 08:09:05 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /jobs, /jobs/json, /jobs/job, /jobs/job/json, /stages, /stages/json, /stages/stage, /stages/stage/json, /stages/pool, /stages/pool/json, /storage, /storage/json, /storage/rdd, /storage/rdd/json, /environment, /environment/json, /executors, /executors/json, /executors/threadDump, /executors/threadDump/json, /static, /, /api, /jobs/job/kill, /stages/stage/kill.
+20/06/09 08:09:05 INFO Server: jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+20/06/09 08:09:05 INFO Server: Started @6318ms
+20/06/09 08:09:05 INFO AbstractConnector: Started ServerConnector@1882a978{HTTP/1.1,[http/1.1]}{0.0.0.0:37813}
+20/06/09 08:09:05 INFO Utils: Successfully started service &#39;SparkUI&#39; on port 37813.
+20/06/09 08:09:05 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@54702403{/jobs,null,AVAILABLE,@Spark}
+20/06/09 08:09:05 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@364fa17b{/jobs/json,null,AVAILABLE,@Spark}
+20/06/09 08:09:05 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@7ffc4e92{/jobs/job,null,AVAILABLE,@Spark}
+20/06/09 08:09:05 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@6feb0d4f{/jobs/job/json,null,AVAILABLE,@Spark}
+20/06/09 08:09:05 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@24e42db0{/stages,null,AVAILABLE,@Spark}
+20/06/09 08:09:05 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@39716f60{/stages/json,null,AVAILABLE,@Spark}
+20/06/09 08:09:05 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@856cc32{/stages/stage,null,AVAILABLE,@Spark}
+20/06/09 08:09:05 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@85478b1{/stages/stage/json,null,AVAILABLE,@Spark}
+20/06/09 08:09:05 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@365d02d5{/stages/pool,null,AVAILABLE,@Spark}
+20/06/09 08:09:05 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@84b0525{/stages/pool/json,null,AVAILABLE,@Spark}
+20/06/09 08:09:05 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@52aabd4d{/storage,null,AVAILABLE,@Spark}
+20/06/09 08:09:05 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@7910d659{/storage/json,null,AVAILABLE,@Spark}
+20/06/09 08:09:05 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@27053804{/storage/rdd,null,AVAILABLE,@Spark}
+20/06/09 08:09:05 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@77b773ec{/storage/rdd/json,null,AVAILABLE,@Spark}
+20/06/09 08:09:05 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@70f0f882{/environment,null,AVAILABLE,@Spark}
+20/06/09 08:09:05 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@fad5adb{/environment/json,null,AVAILABLE,@Spark}
+20/06/09 08:09:05 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@1668632{/executors,null,AVAILABLE,@Spark}
+20/06/09 08:09:05 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@4d02bde1{/executors/json,null,AVAILABLE,@Spark}
+20/06/09 08:09:05 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@3a41682b{/executors/threadDump,null,AVAILABLE,@Spark}
+20/06/09 08:09:05 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@5f5f963a{/executors/threadDump/json,null,AVAILABLE,@Spark}
+20/06/09 08:09:05 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@6a3ddcf5{/static,null,AVAILABLE,@Spark}
+20/06/09 08:09:05 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@61fbc775{/,null,AVAILABLE,@Spark}
+20/06/09 08:09:05 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@a8e58e5{/api,null,AVAILABLE,@Spark}
+20/06/09 08:09:05 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@6d48e50f{/jobs/job/kill,null,AVAILABLE,@Spark}
+20/06/09 08:09:05 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@7c01c49f{/stages/stage/kill,null,AVAILABLE,@Spark}
+20/06/09 08:09:05 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://2263c8e37b7a42be8e515d9bdae9dc570001d640426:37813
+20/06/09 08:09:05 INFO YarnClusterScheduler: Created YarnClusterScheduler
+20/06/09 08:09:05 INFO SchedulerExtensionServices: Starting Yarn extension services with app application_1591688699976_0005 and attemptId Some(appattempt_1591688699976_0005_000001)
+20/06/09 08:09:05 INFO Utils: Successfully started service &#39;org.apache.spark.network.netty.NettyBlockTransferService&#39; on port 41223.
+20/06/09 08:09:05 INFO NettyBlockTransferService: Server created on 2263c8e37b7a42be8e515d9bdae9dc570001d640426:41223
+20/06/09 08:09:05 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+20/06/09 08:09:06 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 2263c8e37b7a42be8e515d9bdae9dc570001d640426, 41223, None)
+20/06/09 08:09:06 INFO BlockManagerMasterEndpoint: Registering block manager 2263c8e37b7a42be8e515d9bdae9dc570001d640426:41223 with 14.8 GB RAM, BlockManagerId(driver, 2263c8e37b7a42be8e515d9bdae9dc570001d640426, 41223, None)
+20/06/09 08:09:06 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 2263c8e37b7a42be8e515d9bdae9dc570001d640426, 41223, None)
+20/06/09 08:09:06 INFO BlockManager: external shuffle service port = 7337
+20/06/09 08:09:06 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 2263c8e37b7a42be8e515d9bdae9dc570001d640426, 41223, None)
+20/06/09 08:09:06 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /metrics/json.
+20/06/09 08:09:06 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@7b8de571{/metrics/json,null,AVAILABLE,@Spark}
+20/06/09 08:09:07 INFO EventLoggingListener: Logging events to wasbs://historyevent@8tef50nic3ffxc4812vno295.blob.core.windows.net/ltianwestus2/ruxu0514small/21/application_1591688699976_0005_1
+20/06/09 08:09:07 INFO SparkContext: Registered listener com.microsoft.hdinsight.spark.metrics.SparkMetricsListener
+20/06/09 08:09:07 INFO YarnRMClient: Registering the ApplicationMaster
+20/06/09 08:09:07 INFO RequestHedgingRMFailoverProxyProvider: Looking for the active RM in [rm1, rm2]...
+20/06/09 08:09:07 INFO RequestHedgingRMFailoverProxyProvider: Found active RM [rm2]
+20/06/09 08:09:08 INFO ApplicationMaster: 
+===============================================================================
+YARN executor launch context:
+  env:
+    CLASSPATH -&gt; $PWD/libraries.zip/*&lt;CPS&gt;{{PWD}}&lt;CPS&gt;{{PWD}}/__spark_conf__&lt;CPS&gt;{{PWD}}/__spark_libs__/*&lt;CPS&gt;/opt/spark/jars/*&lt;CPS&gt;$HADOOP_CONF_DIR&lt;CPS&gt;/usr/hdp/current/hadoop-client/*&lt;CPS&gt;/usr/hdp/current/hadoop-client/lib/*&lt;CPS&gt;/usr/hdp/current/hadoop-hdfs-client/*&lt;CPS&gt;/usr/hdp/current/hadoop-hdfs-client/lib/*&lt;CPS&gt;/usr/hdp/current/hadoop-yarn-client/*&lt;CPS&gt;/usr/hdp/current/hadoop-yarn-client/lib/*&lt;CPS&gt;$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/*&lt;CPS&gt;$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/lib/*&lt;CPS&gt;{{PWD}}/__spark_conf__/__hadoop_conf__
+    SPARK_YARN_STAGING_DIR -&gt; wasbs://default@8tef50nic3ffxc4812vno295.blob.core.windows.net/user/trusted-service-user/.sparkStaging/application_1591688699976_0005
+    SPARK_USER -&gt; trusted-service-user
+    PYTHONPATH -&gt; /opt/spark/python/lib/pyspark.zip&lt;CPS&gt;/opt/spark/python/lib/py4j-0.10.7-src.zip&lt;CPS&gt;/opt/spark/python/lib/pyspark.zip&lt;CPS&gt;/opt/spark/python/lib/py4j-0.10.7-src.zip
+
+  command:
+    LD_LIBRARY_PATH=\&quot;/usr/hdp/current/hadoop-client/lib/native:$LD_LIBRARY_PATH\&quot; \ 
+      {{JAVA_HOME}}/bin/java \ 
+      -server \ 
+      -Xmx28672m \ 
+      &#39;-Detwlogger.component=sparkexecutor&#39; \ 
+      &#39;-DlogFilter.filename=SparkLogFilters.xml&#39; \ 
+      &#39;-DpatternGroup.filename=SparkPatternGroups.xml&#39; \ 
+      &#39;-Dlog4jspark.root.logger=INFO,console,RFA,ETW,Anonymizer&#39; \ 
+      &#39;-Dlog4jspark.log.dir=/var/log/sparkapp/\${user.name}&#39; \ 
+      &#39;-Dlog4jspark.log.file=sparkexecutor.log&#39; \ 
+      &#39;-Dlog4j.configuration=file:/opt/spark/conf/log4j.properties&#39; \ 
+      &#39;-Djavax.xml.parsers.SAXParserFactory=com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl&#39; \ 
+      &#39;-XX:+UseParallelGC&#39; \ 
+      &#39;-XX:+UseParallelOldGC&#39; \ 
+      -Djava.io.tmpdir={{PWD}}/tmp \ 
+      &#39;-Dspark.driver.port=37377&#39; \ 
+      &#39;-Dspark.history.ui.port=18080&#39; \ 
+      &#39;-Dspark.ui.port=0&#39; \ 
+      -Dspark.yarn.app.container.log.dir=&lt;LOG_DIR&gt; \ 
+      -XX:OnOutOfMemoryError=&#39;kill %p&#39; \ 
+      org.apache.spark.executor.CoarseGrainedExecutorBackend \ 
+      --driver-url \ 
+      spark://CoarseGrainedScheduler@2263c8e37b7a42be8e515d9bdae9dc570001d640426:37377 \ 
+      --executor-id \ 
+      &lt;executorId&gt; \ 
+      --hostname \ 
+      &lt;hostname&gt; \ 
+      --cores \ 
+      4 \ 
+      --app-id \ 
+      application_1591688699976_0005 \ 
+      --user-class-path \ 
+      file:$PWD/__app__.jar \ 
+      --user-class-path \ 
+      file:/opt/livy/rsc-jars/livy-rsc.jar \ 
+      --user-class-path \ 
+      file:/opt/livy/rsc-jars/livy-api.jar \ 
+      --user-class-path \ 
+      file:/opt/livy/rsc-jars/netty-all-4.1.17.Final.jar \ 
+      --user-class-path \ 
+      file:/opt/livy/repl_2.11-jars/livy-repl.jar \ 
+      --user-class-path \ 
+      file:/opt/livy/repl_2.11-jars/livy-core.jar \ 
+      --user-class-path \ 
+      file:/opt/livy/repl_2.11-jars/commons-codec-1.9.jar \ 
+      1&gt;&lt;LOG_DIR&gt;/stdout \ 
+      2&gt;&lt;LOG_DIR&gt;/stderr
+
+  resources:
+    __spark_conf__ -&gt; resource { scheme: &quot;wasbs&quot; host: &quot;8tef50nic3ffxc4812vno295.blob.core.windows.net&quot; port: -1 file: &quot;/user/trusted-service-user/.sparkStaging/application_1591688699976_0005/__spark_conf__.zip&quot; userInfo: &quot;default&quot; } size: 218003 timestamp: 1591690137000 type: ARCHIVE visibility: PRIVATE
+
+===============================================================================
+20/06/09 08:09:08 INFO YarnSchedulerBackend$YarnSchedulerEndpoint: ApplicationMaster registered as NettyRpcEndpointRef(spark://YarnAM@2263c8e37b7a42be8e515d9bdae9dc570001d640426:37377)
+20/06/09 08:09:08 INFO YarnAllocator: Will request 2 executor container(s), each with 4 core(s) and 29056 MB memory (including 384 MB of overhead)
+20/06/09 08:09:08 INFO YarnAllocator: Submitted 2 unlocalized container requests.
+20/06/09 08:09:08 INFO ApplicationMaster: Started progress reporter thread with (heartbeat : 1000, initial allocation : 200) intervals
+20/06/09 08:09:08 INFO YarnAllocator: Launching container container_1591688699976_0005_01_000002 on host 2263c8e37b7a42be8e515d9bdae9dc5700332107727 for executor with ID 1
+20/06/09 08:09:08 INFO YarnAllocator: Received 1 containers from YARN, launching executors on 1 of them.
+20/06/09 08:09:09 INFO YarnAllocator: Launching container container_1591688699976_0005_01_000003 on host 2263c8e37b7a42be8e515d9bdae9dc570025cd09383 for executor with ID 2
+20/06/09 08:09:09 INFO YarnAllocator: Received 1 containers from YARN, launching executors on 1 of them.
+20/06/09 08:09:11 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.4.32.10:46718) with ID 1
+20/06/09 08:09:11 INFO BlockManagerMasterEndpoint: Registering block manager 2263c8e37b7a42be8e515d9bdae9dc5700332107727:43325 with 14.8 GB RAM, BlockManagerId(1, 2263c8e37b7a42be8e515d9bdae9dc5700332107727, 43325, None)
+20/06/09 08:09:12 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.4.32.4:45190) with ID 2
+20/06/09 08:09:12 INFO YarnClusterSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.8
+20/06/09 08:09:12 INFO YarnClusterScheduler: YarnClusterScheduler.postStartHook done
+20/06/09 08:09:12 INFO SparkEntries: Spark context finished initialization in 6752ms
+20/06/09 08:09:12 INFO SparkEntries: Created Spark session (with Hive support).
+20/06/09 08:09:12 INFO BlockManagerMasterEndpoint: Registering block manager 2263c8e37b7a42be8e515d9bdae9dc570025cd09383:44911 with 14.8 GB RAM, BlockManagerId(2, 2263c8e37b7a42be8e515d9bdae9dc570025cd09383, 44911, None)
+20/06/09 08:09:12 INFO SharedState: loading hive config file: file:/mnt/var/hadoop/tmp/nm-local-dir/usercache/trusted-service-user/filecache/13/__spark_conf__.zip/__hadoop_conf__/hive-site.xml
+20/06/09 08:09:12 INFO SharedState: Setting hive.metastore.warehouse.dir (&#39;abfss://mydefault@ltianwestus2gen2.dfs.core.windows.net/synapse/workspaces/ltianwestus2/warehouse&#39;) to the value of spark.sql.warehouse.dir (&#39;abfss://mydefault@ltianwestus2gen2.dfs.core.windows.net/synapse/workspaces/ltianwestus2/warehouse&#39;).
+20/06/09 08:09:12 INFO SharedState: Warehouse path is &#39;abfss://mydefault@ltianwestus2gen2.dfs.core.windows.net/synapse/workspaces/ltianwestus2/warehouse&#39;.
+20/06/09 08:09:12 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /SQL.
+20/06/09 08:09:12 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@227ab957{/SQL,null,AVAILABLE,@Spark}
+20/06/09 08:09:12 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /SQL/json.
+20/06/09 08:09:12 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@67cbbacc{/SQL/json,null,AVAILABLE,@Spark}
+20/06/09 08:09:12 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /SQL/execution.
+20/06/09 08:09:12 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@24026d82{/SQL/execution,null,AVAILABLE,@Spark}
+20/06/09 08:09:12 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /SQL/execution/json.
+20/06/09 08:09:12 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@20c67966{/SQL/execution/json,null,AVAILABLE,@Spark}
+20/06/09 08:09:12 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /static/sql.
+20/06/09 08:09:12 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@64c00a19{/static/sql,null,AVAILABLE,@Spark}
+20/06/09 08:09:12 INFO StateStoreCoordinatorRef: Registered StateStoreCoordinator endpoint
+20/06/09 08:09:23 INFO SparkEntries: Created HiveContext.
+20/06/09 08:09:32 INFO SparkContext: Starting job: parquet at NativeMethodAccessorImpl.java:0
+20/06/09 08:09:32 INFO DAGScheduler: Got job 0 (parquet at NativeMethodAccessorImpl.java:0) with 1 output partitions
+20/06/09 08:09:32 INFO DAGScheduler: Final stage: ResultStage 0 (parquet at NativeMethodAccessorImpl.java:0)
+20/06/09 08:09:32 INFO DAGScheduler: Parents of final stage: List()
+20/06/09 08:09:32 INFO DAGScheduler: Missing parents: List()
+20/06/09 08:09:32 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[1] at parquet at NativeMethodAccessorImpl.java:0), which has no missing parents
+20/06/09 08:09:32 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 166.8 KB, free 14.8 GB)
+20/06/09 08:09:32 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 47.7 KB, free 14.8 GB)
+20/06/09 08:09:32 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 2263c8e37b7a42be8e515d9bdae9dc570001d640426:41223 (size: 47.7 KB, free: 14.8 GB)
+20/06/09 08:09:32 INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:1161
+20/06/09 08:09:32 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[1] at parquet at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+20/06/09 08:09:32 INFO YarnClusterScheduler: Adding task set 0.0 with 1 tasks
+20/06/09 08:09:32 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, 2263c8e37b7a42be8e515d9bdae9dc5700332107727, executor 1, partition 0, PROCESS_LOCAL, 8621 bytes)
+20/06/09 08:09:33 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 2263c8e37b7a42be8e515d9bdae9dc5700332107727:43325 (size: 47.7 KB, free: 14.8 GB)
+20/06/09 08:09:35 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 2208 ms on 2263c8e37b7a42be8e515d9bdae9dc5700332107727 (executor 1) (1/1)
+20/06/09 08:09:35 INFO YarnClusterScheduler: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+20/06/09 08:09:35 INFO DAGScheduler: ResultStage 0 (parquet at NativeMethodAccessorImpl.java:0) finished in 2.347 s
+20/06/09 08:09:35 INFO DAGScheduler: Job 0 finished: parquet at NativeMethodAccessorImpl.java:0, took 2.397093 s
+20/06/09 08:09:42 INFO SelfRenewingLease: Renewed lease 818cc4e0-d5f6-4d9d-8e6f-033cb19bb9f7 on https://8tef50nic3ffxc4812vno295.blob.core.windows.net/default/app-logs/2263c8e3-7b7a-42be-8e51-5d9bdae9dc57/trusted-service-user/driver-logs/application_1591688699976_0005/stdout
+20/06/09 08:09:42 INFO SelfRenewingLease: Renewed lease cbeb2731-2b32-4fb3-ada4-7952b242947b on https://8tef50nic3ffxc4812vno295.blob.core.windows.net/default/app-logs/2263c8e3-7b7a-42be-8e51-5d9bdae9dc57/trusted-service-user/driver-logs/application_1591688699976_0005/stderr
+20/06/09 08:09:43 INFO FileSourceStrategy: Pruning directories with: 
+20/06/09 08:09:43 INFO FileSourceStrategy: Post-Scan Filters: isnotnull(date#5),(date#5 &gt;= 1575878965901975),(date#5 &lt;= 1591690165901927)
+20/06/09 08:09:43 INFO FileSourceStrategy: Output Data Schema: struct&lt;countryOrRegion: string, holidayName: string, normalizeHolidayName: string, isPaidTimeOff: boolean, countryRegionCode: string ... 1 more field&gt;
+20/06/09 08:09:43 INFO FileSourceScanExec: Pushed Filters: IsNotNull(date),GreaterThanOrEqual(date,2019-12-09 08:09:25.901975),LessThanOrEqual(date,2020-06-09 08:09:25.901927)
+20/06/09 08:09:43 INFO CodeGenerator: Code generated in 197.318089 ms
+20/06/09 08:09:44 INFO CodeGenerator: Code generated in 55.402888 ms
+20/06/09 08:09:44 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 510.6 KB, free 14.8 GB)
+20/06/09 08:09:44 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 47.1 KB, free 14.8 GB)
+20/06/09 08:09:44 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 2263c8e37b7a42be8e515d9bdae9dc570001d640426:41223 (size: 47.1 KB, free: 14.8 GB)
+20/06/09 08:09:44 INFO SparkContext: Created broadcast 1 from showString at NativeMethodAccessorImpl.java:0
+20/06/09 08:09:44 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+20/06/09 08:09:44 INFO SparkContext: Starting job: showString at NativeMethodAccessorImpl.java:0
+20/06/09 08:09:44 INFO DAGScheduler: Got job 1 (showString at NativeMethodAccessorImpl.java:0) with 1 output partitions
+20/06/09 08:09:44 INFO DAGScheduler: Final stage: ResultStage 1 (showString at NativeMethodAccessorImpl.java:0)
+20/06/09 08:09:44 INFO DAGScheduler: Parents of final stage: List()
+20/06/09 08:09:44 INFO DAGScheduler: Missing parents: List()
+20/06/09 08:09:44 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[5] at showString at NativeMethodAccessorImpl.java:0), which has no missing parents
+20/06/09 08:09:44 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 13.5 KB, free 14.8 GB)
+20/06/09 08:09:44 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 5.9 KB, free 14.8 GB)
+20/06/09 08:09:44 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 2263c8e37b7a42be8e515d9bdae9dc570001d640426:41223 (size: 5.9 KB, free: 14.8 GB)
+20/06/09 08:09:44 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1161
+20/06/09 08:09:44 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[5] at showString at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+20/06/09 08:09:44 INFO YarnClusterScheduler: Adding task set 1.0 with 1 tasks
+20/06/09 08:09:44 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1, 2263c8e37b7a42be8e515d9bdae9dc5700332107727, executor 1, partition 0, PROCESS_LOCAL, 8870 bytes)
+20/06/09 08:09:44 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 2263c8e37b7a42be8e515d9bdae9dc5700332107727:43325 (size: 5.9 KB, free: 14.8 GB)
+20/06/09 08:09:44 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 2263c8e37b7a42be8e515d9bdae9dc5700332107727:43325 (size: 47.1 KB, free: 14.8 GB)
+20/06/09 08:09:47 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 2925 ms on 2263c8e37b7a42be8e515d9bdae9dc5700332107727 (executor 1) (1/1)
+20/06/09 08:09:47 INFO YarnClusterScheduler: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+20/06/09 08:09:47 INFO DAGScheduler: ResultStage 1 (showString at NativeMethodAccessorImpl.java:0) finished in 2.948 s
+20/06/09 08:09:47 INFO DAGScheduler: Job 1 finished: showString at NativeMethodAccessorImpl.java:0, took 2.957137 s
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 44
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 43
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 53
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 48
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 41
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 54
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 29
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 46
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 35
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 11
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 1
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 38
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 25
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 61
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 62
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 4
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 17
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 47
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 32
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 12
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 24
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 52
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 3
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 51
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 14
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 5
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 2
+20/06/09 08:10:14 INFO SessionTokenBasedTokenProvider: Setting up conf
+20/06/09 08:10:14 INFO SessionTokenBasedTokenProvider: SessionTokenBasedTokenProvider initialized
+20/06/09 08:10:14 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 2263c8e37b7a42be8e515d9bdae9dc570001d640426:41223 in memory (size: 47.7 KB, free: 14.8 GB)
+20/06/09 08:10:14 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 2263c8e37b7a42be8e515d9bdae9dc5700332107727:43325 in memory (size: 47.7 KB, free: 14.8 GB)
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 42
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 59
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 30
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 63
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 7
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 49
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 21
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 31
+20/06/09 08:10:14 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 2263c8e37b7a42be8e515d9bdae9dc570001d640426:41223 in memory (size: 47.1 KB, free: 14.8 GB)
+20/06/09 08:10:14 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 2263c8e37b7a42be8e515d9bdae9dc5700332107727:43325 in memory (size: 47.1 KB, free: 14.8 GB)
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 34
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 36
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 39
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 60
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 45
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 16
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 23
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 10
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 20
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 57
+20/06/09 08:10:14 INFO BlockManagerInfo: Removed broadcast_2_piece0 on 2263c8e37b7a42be8e515d9bdae9dc570001d640426:41223 in memory (size: 5.9 KB, free: 14.8 GB)
+20/06/09 08:10:14 INFO BlockManagerInfo: Removed broadcast_2_piece0 on 2263c8e37b7a42be8e515d9bdae9dc5700332107727:43325 in memory (size: 5.9 KB, free: 14.8 GB)
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 58
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 9
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 26
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 13
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 22
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 56
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 15
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 19
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 27
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 37
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 40
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 18
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 8
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 6
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 50
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 33
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 64
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 55
+20/06/09 08:10:14 INFO ContextCleaner: Cleaned accumulator 28
+20/06/09 08:10:14 INFO FileSourceStrategy: Pruning directories with: 
+20/06/09 08:10:14 INFO FileSourceStrategy: Post-Scan Filters: isnotnull(date#5),(date#5 &gt;= 1575878965901975),(date#5 &lt;= 1591690165901927)
+20/06/09 08:10:14 INFO FileSourceStrategy: Output Data Schema: struct&lt;countryOrRegion: string, holidayName: string, normalizeHolidayName: string, isPaidTimeOff: boolean, countryRegionCode: string ... 1 more field&gt;
+20/06/09 08:10:14 INFO FileSourceScanExec: Pushed Filters: IsNotNull(date),GreaterThanOrEqual(date,2019-12-09 08:09:25.901975),LessThanOrEqual(date,2020-06-09 08:09:25.901927)
+20/06/09 08:10:15 WARN DefaultTimer: Can not service-load a timer. Using JavaTimer instead.
+20/06/09 08:10:15 INFO TokenLibrary: Attempting to fetch access token from cache
+20/06/09 08:10:15 WARN InMemoryCacheClient: Token not found in in-memory cache
+20/06/09 08:10:15 INFO TokenLibrary: Invoking token service to fetch access token
+20/06/09 08:10:15 INFO TokenLibrary: Fetching access token
+20/06/09 08:10:16 INFO finagle: Finagle version 19.5.1 (rev=21b8a8b3eeca571eedc7094df53d5eb806856b61) built at 20190520-193515
+20/06/09 08:10:18 INFO TokenLibrary: POST success
+20/06/09 08:10:18 INFO InMemoryCacheClient: Token successfully cached in memory
+20/06/09 08:10:19 INFO ParquetFileFormat: Using default output committer for Parquet: org.apache.parquet.hadoop.ParquetOutputCommitter
+20/06/09 08:10:19 INFO FileOutputCommitter: File Output Committer Algorithm version is 2
+20/06/09 08:10:19 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+20/06/09 08:10:19 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+20/06/09 08:10:19 INFO FileOutputCommitter: File Output Committer Algorithm version is 2
+20/06/09 08:10:19 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+20/06/09 08:10:19 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+20/06/09 08:10:19 INFO CodeGenerator: Code generated in 36.258279 ms
+20/06/09 08:10:19 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 508.9 KB, free 14.8 GB)
+20/06/09 08:10:19 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 47.2 KB, free 14.8 GB)
+20/06/09 08:10:19 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 2263c8e37b7a42be8e515d9bdae9dc570001d640426:41223 (size: 47.2 KB, free: 14.8 GB)
+20/06/09 08:10:19 INFO SparkContext: Created broadcast 3 from parquet at NativeMethodAccessorImpl.java:0
+20/06/09 08:10:19 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+20/06/09 08:10:19 INFO SparkContext: Starting job: parquet at NativeMethodAccessorImpl.java:0
+20/06/09 08:10:19 INFO DAGScheduler: Got job 2 (parquet at NativeMethodAccessorImpl.java:0) with 1 output partitions
+20/06/09 08:10:19 INFO DAGScheduler: Final stage: ResultStage 2 (parquet at NativeMethodAccessorImpl.java:0)
+20/06/09 08:10:19 INFO DAGScheduler: Parents of final stage: List()
+20/06/09 08:10:19 INFO DAGScheduler: Missing parents: List()
+20/06/09 08:10:19 INFO DAGScheduler: Submitting ResultStage 2 (MapPartitionsRDD[7] at parquet at NativeMethodAccessorImpl.java:0), which has no missing parents
+20/06/09 08:10:19 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 349.0 KB, free 14.8 GB)
+20/06/09 08:10:19 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 99.9 KB, free 14.8 GB)
+20/06/09 08:10:19 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 2263c8e37b7a42be8e515d9bdae9dc570001d640426:41223 (size: 99.9 KB, free: 14.8 GB)
+20/06/09 08:10:19 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1161
+20/06/09 08:10:19 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[7] at parquet at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+20/06/09 08:10:19 INFO YarnClusterScheduler: Adding task set 2.0 with 1 tasks
+20/06/09 08:10:19 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 2, 2263c8e37b7a42be8e515d9bdae9dc5700332107727, executor 1, partition 0, PROCESS_LOCAL, 8870 bytes)
+20/06/09 08:10:19 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 2263c8e37b7a42be8e515d9bdae9dc5700332107727:43325 (size: 99.9 KB, free: 14.8 GB)
+20/06/09 08:10:22 INFO SelfRenewingLease: Renewed lease 818cc4e0-d5f6-4d9d-8e6f-033cb19bb9f7 on https://8tef50nic3ffxc4812vno295.blob.core.windows.net/default/app-logs/2263c8e3-7b7a-42be-8e51-5d9bdae9dc57/trusted-service-user/driver-logs/application_1591688699976_0005/stdout
+20/06/09 08:10:22 INFO SelfRenewingLease: Renewed lease cbeb2731-2b32-4fb3-ada4-7952b242947b on https://8tef50nic3ffxc4812vno295.blob.core.windows.net/default/app-logs/2263c8e3-7b7a-42be-8e51-5d9bdae9dc57/trusted-service-user/driver-logs/application_1591688699976_0005/stderr
+20/06/09 08:10:24 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 2263c8e37b7a42be8e515d9bdae9dc5700332107727:43325 (size: 47.2 KB, free: 14.8 GB)
+20/06/09 08:10:28 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 2) in 8755 ms on 2263c8e37b7a42be8e515d9bdae9dc5700332107727 (executor 1) (1/1)
+20/06/09 08:10:28 INFO YarnClusterScheduler: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+20/06/09 08:10:28 INFO DAGScheduler: ResultStage 2 (parquet at NativeMethodAccessorImpl.java:0) finished in 8.800 s
+20/06/09 08:10:28 INFO DAGScheduler: Job 2 finished: parquet at NativeMethodAccessorImpl.java:0, took 8.805246 s
+20/06/09 08:10:28 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 2263c8e37b7a42be8e515d9bdae9dc5700332107727:43325 in memory (size: 99.9 KB, free: 14.8 GB)
+20/06/09 08:10:28 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 2263c8e37b7a42be8e515d9bdae9dc570001d640426:41223 in memory (size: 99.9 KB, free: 14.8 GB)
+20/06/09 08:10:28 INFO FileFormatWriter: Write Job 3befa4a5-fb4b-49c0-9467-073fbf846e31 committed.
+20/06/09 08:10:28 INFO FileFormatWriter: Finished processing stats for write job 3befa4a5-fb4b-49c0-9467-073fbf846e31.
+20/06/09 08:10:33 INFO AbstractConnector: Stopped Spark@1882a978{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+20/06/09 08:10:33 INFO SparkUI: Stopped Spark web UI at http://2263c8e37b7a42be8e515d9bdae9dc570001d640426:37813
+20/06/09 08:10:33 INFO YarnAllocator: Driver requested a total number of 0 executor(s).
+20/06/09 08:10:33 INFO YarnClusterSchedulerBackend: Shutting down all executors
+20/06/09 08:10:33 INFO YarnSchedulerBackend$YarnDriverEndpoint: Asking each executor to shut down
+20/06/09 08:10:33 INFO SchedulerExtensionServices: Stopping SchedulerExtensionServices
+(serviceOption=None,
+ services=List(),
+ started=false)
+20/06/09 08:10:34 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+20/06/09 08:10:34 INFO MemoryStore: MemoryStore cleared
+20/06/09 08:10:34 INFO BlockManager: BlockManager stopped
+20/06/09 08:10:34 INFO BlockManagerMaster: BlockManagerMaster stopped
+20/06/09 08:10:34 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+20/06/09 08:10:34 INFO SparkContext: Successfully stopped SparkContext
+20/06/09 08:10:34 INFO PythonInterpreter: Shutting down process
+20/06/09 08:10:34 INFO YarnAllocator: Completed container container_1591688699976_0005_01_000003 on host: 2263c8e37b7a42be8e515d9bdae9dc570025cd09383 (state: COMPLETE, exit status: 0)
+20/06/09 08:10:34 INFO YarnAllocator: Executor for container container_1591688699976_0005_01_000003 exited because of a YARN event (e.g., pre-emption) and not because of an error in the running job.
+20/06/09 08:10:34 INFO YarnAllocator: Completed container container_1591688699976_0005_01_000002 on host: 2263c8e37b7a42be8e515d9bdae9dc5700332107727 (state: COMPLETE, exit status: 0)
+20/06/09 08:10:34 INFO YarnAllocator: Executor for container container_1591688699976_0005_01_000002 exited because of a YARN event (e.g., pre-emption) and not because of an error in the running job.
+20/06/09 08:10:39 INFO SparkContext: SparkContext already stopped.
+20/06/09 08:10:39 INFO PythonInterpreter: process has been shut down
+20/06/09 08:10:39 INFO SparkContext: SparkContext already stopped.
+20/06/09 08:10:39 INFO ApplicationMaster: Final app status: SUCCEEDED, exitCode: 0
+20/06/09 08:10:39 INFO ApplicationMaster: Unregistering ApplicationMaster with SUCCEEDED
+20/06/09 08:10:39 INFO AMRMClientImpl: Waiting for application to be successfully unregistered.
+20/06/09 08:10:40 INFO ApplicationMaster: Deleting staging directory wasbs://default@8tef50nic3ffxc4812vno295.blob.core.windows.net/user/trusted-service-user/.sparkStaging/application_1591688699976_0005
+20/06/09 08:10:40 WARN AzureFileSystemThreadPoolExecutor: Disabling threads for Delete operation as thread count 0 is &lt;= 1
+20/06/09 08:10:40 INFO AzureFileSystemThreadPoolExecutor: Time taken for Delete operation is: 8 ms with threads: 0
+20/06/09 08:10:40 INFO ShutdownHookManager: Shutdown hook called
+20/06/09 08:10:40 INFO ShutdownHookManager: Deleting directory /mnt/var/hadoop/tmp/nm-local-dir/usercache/trusted-service-user/appcache/application_1591688699976_0005/spark-24b17797-8c75-4ac6-8cd9-06d0f4c3273a
+20/06/09 08:10:40 INFO ShutdownHookManager: Deleting directory /mnt/var/hadoop/tmp/nm-local-dir/usercache/trusted-service-user/appcache/application_1591688699976_0005/spark-24b17797-8c75-4ac6-8cd9-06d0f4c3273a/pyspark-d8840993-ab07-4e12-82aa-c0e8a7b525b1
+20/06/09 08:10:40 INFO MetricsSystemImpl: Stopping azure-file-system metrics system...
+20/06/09 08:10:40 INFO MetricsSystemImpl: azure-file-system metrics system stopped.
+20/06/09 08:10:40 INFO MetricsSystemImpl: azure-file-system metrics system shutdown complete.
+
+End of LogType:stderr
+***********************************************************************
